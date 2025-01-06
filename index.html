@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulisse il Cane Parlante</title>
+    <style>
+        /* Imposta lo sfondo spaziale */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: url('https://usagif.com/wp-content/uploads/gifs/starfall-gif-46.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #f4d03f;
+            text-shadow: 2px 2px 10px #1abc9c;
+        }
+
+        .video-box {
+            border: 4px solid #f4d03f;
+            border-radius: 10px;
+            padding: 10px;
+            background: #1abc9c;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        video {
+            width: 100%; /* Si adatta automaticamente */
+            max-height: 500px;
+            border-radius: 10px;
+        }
+
+        /* Piccolo box per il logo */
+        .logo-box {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-box img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 5px;
+        }
+
+        /* Ottimizzazione per dispositivi mobili */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .container {
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-box">
+        <img src="https://scontent.fbri4-1.fna.fbcdn.net/v/t39.30808-6/398589326_735036251995725_397672061231774986_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=oHwbAHLTVBoQ7kNvgFiR9J4&_nc_zt=23&_nc_ht=scontent.fbri4-1.fna&_nc_gid=AEX4ay-U25MuNnDytsr6WVO&oh=00_AYAxePsJ7yeX5fnCNOS-wn7W8lg1R9gbAWAnwAA2mhq5bw&oe=6781AA64" alt="Logo Azienda">
+    </div>
+
+    <div class="container">
+        <h1>Ulisse il Cane Parlante</h1>
+        <div class="video-box">
+            <!-- Video MP4 locale -->
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Il tuo browser non supporta il video.
+            </video>
+        </div>
+    </div>
+</body>
+</html>
